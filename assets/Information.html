@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://127.0.0.1:5500/04-flex-information/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    
+  <link rel="stylesheet" href="./Information_files/style.css"></head>
+  <body>
+    <div class="title">Information!</div>
+
+    <div class="container">
+      <div class="plant">
+        <img src="./Information_files/barberry.png" alt="barberry">
+        <div class="text">This is a type of plant. We love this one.</div>  
+      </div>
+  
+      <div class="plant">
+        <img src="./Information_files/chilli.png" alt="chili">
+        <div class="text">This is another type of plant. Isn't it nice?</div>
+      </div>
+  
+      <div class="plant">
+        <img src="./Information_files/pepper.png" alt="pepper">
+        <div class="text">We have so many plants. Yay plants.</div>
+      </div>
+  
+      <div class="plant">
+        <img src="./Information_files/saffron.png" alt="saffron">
+        <div class="text">I'm running out of things to say about plants.</div>
+      </div>
+    </div>
+
+
+    <!-- disregard this section, it's here to give attribution to the creator of these icons -->
+    <div class="footer">
+      <div>Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
